@@ -37,20 +37,6 @@ Connect an Android device or use an emulator.
 
 Click Run to build and launch the app.
 
-📂 Project Structure
-swift
-Copy
-Edit
-FraudDetector/
-├── app/
-│   ├── java/com.example.frauddetector/
-│   │   ├── MainActivity.java         // Main logic for message and URL check
-│   │   ├── SpamDetectionAPI.java     // Handles spam message detection API calls
-│   │   ├── SafeBrowsingCheck.java    // Handles Google Safe Browsing API calls
-│   │   └── NotificationHelper.java  // Notification logic
-│   └── res/layout/
-│       └── activity_main.xml        // UI layout file
-└── README.md                        // Project overview
 📡 APIs Used
 Google Safe Browsing API: Checks URLs for potential threats.
 Custom Spam Detection API: Checks text messages for phishing and fraud attempts.
