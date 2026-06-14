@@ -25,17 +25,8 @@ Google Safe Browsing API (for URL checking)
 Custom Spam Detection API (for message spam analysis)
 Notifications (Toast & Push Notifications)
 
-🚀 How to Run
-Clone this repository:
-bash
-Copy
-Edit
-git clone https://github.com/AachalPatani/Phishing-detect-app.git
-Open the project in Android Studio.
 
-Connect an Android device or use an emulator.
-
-Click Run to build and launch the app.
+C
 
 📡 APIs Used
 Google Safe Browsing API: Checks URLs for potential threats.
