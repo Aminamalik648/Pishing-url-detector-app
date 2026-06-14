@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEFF1"
+    tools:context=".MainActivity">
+
+    <!-- Top Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#37474F"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btnCheckMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Check Message"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/nav_button_bg" />
+
+        <Button
+            android:id="@+id/btnCheckUrl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Check URL"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/nav_button_bg" />
+
+        <Button
+            android:id="@+id/btnCheckCall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Check Call"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/nav_button_bg" />
+    </LinearLayout>
+
+    <!-- Input Field for Message -->
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navigationBar"
+        android:layout_margin="16dp"
+        android:hint="Enter message to check"
+        android:background="@drawable/edittext_bg"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        android:textSize="16sp" />
+
+    <!-- Progress Bar for Loading -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:visibility="gone" />
+
+    <!-- Dynamic Content Space / Fragment container -->
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fabChatbot"
+        android:layout_below="@id/progressBar"
+        android:background="@drawable/th"
+        android:padding="10dp" />
+
+    <!-- Plus Button for Chatbot -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabChatbot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_input_add"
+        android:contentDescription="Chatbot"
+        android:tint="#FFFFFF"
+        android:backgroundTint="#FF5722" />
+
+</RelativeLayout>
