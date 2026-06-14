@@ -1,4 +1,4 @@
-🚨 Phishing & Fraud Detector App
+🚨 Phishing Url Detector App
 This is an Android application built using Java and Android Studio that detects fraudulent messages and malicious URLs using AI-based spam detection and Google Safe Browsing API. It aims to help users stay protected from phishing attempts, spam messages, and dangerous links.
 
 ✅ Features
